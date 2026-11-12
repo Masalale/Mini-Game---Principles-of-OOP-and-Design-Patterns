@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Leaderboard
 {
-    private const int MaxEntries = 5;
+    private const int MaxEntries = 3;
     private const string CountKey = "BestTimeCount";
     private const string TimeKeyPrefix = "BestTime";
 
@@ -63,7 +63,8 @@ public class Leaderboard
     private void Load()
     {
         int count = PlayerPrefs.GetInt(CountKey, 0);
-        for (int i = 0; i < count; i++)
+        // Older saves may hold more times than the board shows now, so only load the top ones
+        for (int i = 0; i < count && i < MaxEntries; i++)
         {
             times.Add(PlayerPrefs.GetFloat(TimeKeyPrefix + i));
         }
