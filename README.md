@@ -1,4 +1,4 @@
-# Crypt Crawler
+# PacmanClone
 
 A one-screen 2D dungeon maze in Unity: grab every potion before the ghosts catch you, then try to beat your best time.
 
@@ -16,7 +16,7 @@ A one-screen 2D dungeon maze in Unity: grab every potion before the ghosts catch
    ```bash
    git clone https://github.com/Masalale/Mini-Game---Principles-of-OOP-and-Design-Patterns.git
    ```
-2. Open the folder in Unity 6000.3.23f1.
+2. Open the folder in Unity 6.
 3. Open `Assets/Scenes/Game.unity`, press **Play**, and move with `WASD` or the arrow keys. Collect all 10 potions without touching a ghost.
 
 ## Structure
